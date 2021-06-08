@@ -1,0 +1,94 @@
+.check {
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #19c5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 1200px;
+}
+.wrapper > input {
+  border: 1px solid #ff8c00;
+  text-align: center;
+  padding: 10px;
+  width: 92%;
+  margin-bottom: 30px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  width: 100%;
+}
+p .task-input {
+  background-color: #19c5ff;
+  border: none;
+  font-size: 18px;
+  width: 400px;
+  margin-left: 16px;
+  margin-right: 20px;
+  text-align: center;
+}
+.close {
+  font-size: 14px;
+}
+.is-done {
+  text-decoration: line-through;
+}
+
+.buttons Button {
+  margin-left: 15px;
+}
+.items-left {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+.completed {
+  display: block;
+  margin-left: 10px;
+}
+.ant-input {
+  width: 92%;
+}
+.div-before-span {
+  width: 100%;
+  text-align: center;
+}
+.input-span {
+  text-align: center;
+  width: 100%;
+}
+
+.tasks {
+  width: 96%;
+}
+
+.div-before-span .color-red {
+  text-align: center;
+  height: 20px;
+  background-color: #19c5ff;
+}
+.div-before-span .task-element {
+  text-align: center;
+  width: 90%;
+}
