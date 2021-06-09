@@ -29,7 +29,7 @@ export default function Task({
           value={value}
           className="task-element"
           onKeyPress={(e) => updateSpan(e.key, task.isDone, value, task._id)}
-          // onBlur={() => updateSpanBlur(task.isDone, value, task._id)}
+          onBlur={() => updateSpanBlur(task.isDone, value, task._id)}
           onChange={(e) => setValue(e.target.value)}
         />
       ) : (

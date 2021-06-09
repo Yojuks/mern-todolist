@@ -1,6 +1,3 @@
-/* body {
-  font-family: 'Roboto', sans-serif;
-} */
 h1,
 span {
   font-family: 'Roboto', sans-serif;
@@ -102,4 +99,19 @@ p .task-input {
 .task .task-element {
   text-align: center;
   width: 90%;
+}
+
+@media (max-width: 550px) {
+  .buttons {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .buttons-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .completed {
+    margin-top: 15px;
+  }
 }

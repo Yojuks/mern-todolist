@@ -11,9 +11,11 @@ export default function ToDoListFooter({ tasks, onFilterChanged, clearCompleted 
             {tasks.filter((element) => !element.completed).length} items left
           </span>
         </div>
-        <Button onClick={() => onFilterChanged(null)}>All</Button>
-        <Button onClick={() => onFilterChanged(true)}>Active</Button>
-        <Button onClick={() => onFilterChanged(false)}>Completed</Button>
+        <div className="buttons-group">
+          <Button onClick={() => onFilterChanged(null)}>All</Button>
+          <Button onClick={() => onFilterChanged(true)}>Active</Button>
+          <Button onClick={() => onFilterChanged(false)}>Completed</Button>
+        </div>
         <div>
           <Button className="completed" onClick={clearCompleted}>
             Clear completed
