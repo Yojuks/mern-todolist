@@ -1,12 +1,13 @@
+/* body {
+  font-family: 'Roboto', sans-serif;
+} */
+h1,
+span {
+  font-family: 'Roboto', sans-serif;
+}
 .check {
   text-decoration: line-through;
   text-align: center;
-}
-
-.task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .wrapper {
@@ -28,13 +29,6 @@
   margin-bottom: 30px;
 }
 
-.task {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 15px;
-  width: 100%;
-}
 p .task-input {
   background-color: #19c5ff;
   border: none;
@@ -45,7 +39,7 @@ p .task-input {
   text-align: center;
 }
 .close {
-  font-size: 14px;
+  font-size: 19px;
 }
 .is-done {
   text-decoration: line-through;
@@ -72,23 +66,40 @@ p .task-input {
 }
 .div-before-span {
   width: 100%;
-  text-align: center;
 }
+
+.task_text {
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
 .input-span {
   text-align: center;
   width: 100%;
 }
 
 .tasks {
-  width: 96%;
+  width: 95%;
 }
 
-.div-before-span .color-red {
+.color-red {
   text-align: center;
   height: 20px;
   background-color: #19c5ff;
 }
-.div-before-span .task-element {
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+}
+
+.task .task-element {
   text-align: center;
   width: 90%;
 }

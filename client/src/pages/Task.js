@@ -23,24 +23,25 @@ export default function Task({
           onChange={(e) => toggleSpan(task._id, task.isDone, task.title)}
         />
       </div>
-      <div className="div-before-span">
-        {active.active && active.id === task._id ? (
-          <Input
-            type="text"
-            value={value}
-            className="task-element"
-            onKeyPress={(e) => updateSpan(e.key, task.isDone, value, task._id)}
-            onBlur={() => updateSpanBlur(task.isDone, value, task._id)}
-            onChange={(e) => setValue(e.target.value)}
-          />
-        ) : (
-          <span className={task.isDone ? 'check' : ''} onClick={() => setSpan(task._id)}>
-            {task.title}
-          </span>
-        )}
-        <span className="close" onClick={() => deleteTask(task._id)}>
-          <DeleteOutlined color="red" />
-        </span>
+      {active.active && active.id === task._id ? (
+        <Input
+          type="text"
+          value={value}
+          className="task-element"
+          onKeyPress={(e) => updateSpan(e.key, task.isDone, value, task._id)}
+          // onBlur={() => updateSpanBlur(task.isDone, value, task._id)}
+          onChange={(e) => setValue(e.target.value)}
+        />
+      ) : (
+        <div
+          className={task.isDone ? 'task_text check' : 'task_text'}
+          onClick={() => setSpan(task._id)}
+        >
+          <span>{task.title}</span>
+        </div>
+      )}
+      <div className="close" onClick={() => deleteTask(task._id)}>
+        <DeleteOutlined color="red" />
       </div>
     </div>
   );
