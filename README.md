@@ -4,7 +4,7 @@
 
 ## Website
 
-- http://flask-weather.eba-rqdaactq.us-west-2.elasticbeanstalk.com/
+- http://46.101.96.97/
 
 I then containerized the api server and react client and created docker-compose to connect them.
 
