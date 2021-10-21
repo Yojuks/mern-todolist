@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'http://18.170.221.142/api',
 });
 
 export const insertTodoItem = (payload) => api.post(`/todolist`, payload);
